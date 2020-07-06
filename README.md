@@ -1,5 +1,12 @@
 # vuex-todo-app
 
+This is basically a follow along with Traversy Media's Vuex crash course with some minor modifications  
+
+Todo:
+- Add database instead of Jsonplaceholder
+- Drag to change prio
+- Add router
+
 ## Project setup
 ```
 npm install
