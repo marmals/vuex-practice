@@ -1,29 +1,28 @@
 <template>
   <div id="app">
+    <Header/>
     <div class="container">
-      <AddTodo />
-      <FilterTodos />
-      <Todos />
+      <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-import Todos from './components/Todos.vue'
-import AddTodo from './components/AddTodo.vue'
-import FilterTodos from './components/FilterTodos.vue'
-
+import Header from "./components/layout/Header"
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Todos,
-    AddTodo,
-    FilterTodos
+    Header
   }
 }
 </script>
 
 <style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   body{
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     line-height: 1.6;
